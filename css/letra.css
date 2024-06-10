@@ -1,0 +1,20 @@
+.font-size-controls {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.font-size-button {
+  background-color: #003b71;
+  color: #fff;
+  font-size: 16px;
+  padding: 10px 20px;
+  margin: 0 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.font-size-button:hover {
+  background-color: #002549;
+  color: #FFD700;
+}

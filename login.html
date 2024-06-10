@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/dark.css">
+  <link rel="stylesheet" type="text/css" href="./css/login.css" media="screen">
+  <link rel="shortcut icon" type="imagex/png" href="/imagens/logo telacall site.png">
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <script src="login.js"></script>
+  <title>Área de Login</title>
+</head>
+
+<body>
+
+  <header class="cabecalho">
+
+    <nav class="dp-menu">
+
+      <a href="index.html"><img class="logo" src="/imagens/telecall.png" alt=""></a>
+
+      <ul>
+
+
+        <li><a href="#"><img id="home" src="imagens/produtos.png" title="produtos"></a>
+          <ul>
+            <li><a href="#">Internet</a></li>
+            <li><a href="#">Telefonia</a></li>
+            <li><a href="#">Rede e Infraestrutura</a></li>
+            <li><a href="#series">Mobilidade</a></li>
+
+          </ul>
+        </li>
+        <li><a href="/empresas.html"><img id="home" src="imagens/contatos.png" title="contatos"></a>
+          <ul>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="/empresas.html">Empresas</a></li>
+            <li><a href="https://api.whatsapp.com/send?phone=552130301010&text=%23Comercial">Whatsapp</a></li>
+          </ul>
+        </li>
+
+        <li>
+          <a href="https://new-form.felipenascime42.repl.co/"><img id="home" src="imagens/cadastro.png"
+              title="cadastro"></a>
+
+          <a href="index.html"><img id="home" src="imagens/casa.png" title="inicio"></a>
+        </li>
+        <!-- icone da casinha pra voltar pro inicio da telecall -->
+
+      </ul>
+
+      <!-- Dark Mode -->
+
+      <div>
+        <input type="checkbox" class="checkbox" id="chk">
+        <label class="label" for="chk">
+          <i class="fas fa-moon"></i>
+          <i class="fas fa-sun"></i>
+          <div class="ball"></div>
+        </label>
+      </div>
+      <!-- Dark Mode -->
+
+    </nav>
+
+  </header>
+
+  <!--Campo  de login-->
+
+  <body>
+    <div class="container-login">
+      <div class="card">
+        <h1>Bem Vindo</h1>
+
+        <div class="label-float">
+          <input type="text" id="usuario" placeholder="" required maxlength="6">
+          <label class="label_login" id="labelUser" for="usuario">Usuario</label>
+        </div>
+
+        <div class="label-float">
+          <input type="password" id="senha" placeholder="" required maxlength="8">
+          <label class="label_login" id="labelSenha" for="senha">Senha</label>
+        </div>
+
+        <div id="msgError"></div>
+
+        <div class="justify-center">
+          <button onclick="entrar()">Entrar</button>
+        </div>
+
+
+
+
+        <div class="justify-center">
+          <hr>
+        </div>
+
+        <p>Não tem uma conta?
+          <a href="https://projet-x.felipenascime42.repl.co/cadastro.html" target="_blank"><strong>
+              Cadastre-se</strong></a>
+        </p>
+
+      </div>
+    </div>
+
+
+    <footer class="rodape">
+
+      <div class="container">
+        <div class="row">
+          <div class="rodape-col">
+            <h4>Compania</h4>
+            <ul>
+
+              <li><a href="https://carreirastelecall.vagas.solides.com.br/">Carreira</a></li>
+              <li><a href="#">Política de privacidade</a></li>
+
+            </ul>
+          </div>
+
+          <div class="rodape-col">
+            <h4>Ajuda?</h4>
+            <ul>
+              <li><a href="https://api.whatsapp.com/send?phone=552130301010&text=%23Comercial">Whatsapp</a></li>
+              <li><a href="/empresas.html">Contatos</a></li>
+            </ul>
+          </div>
+
+          <div class="rodape-col">
+            <h4>Produtos Online</h4>
+            <ul>
+              <li><a href="#">Internet</a></li>
+              <li><a href="#">Telefonia</a></li>
+              <li><a href="#">Rede e Infraestrutura</a></li>
+              <li><a href="#">Mobilidade</a></li>
+            </ul>
+          </div>
+          <!-- links para as redes da telecall -->
+          <div class="rodape-col">
+            <h4>Nossas Redes</h4>
+            <div class="links-redes">
+              <a href="https://www.facebook.com/TelecallBr" target="_blank"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://www.instagram.com/telecallbr/" target="_blank"><i class="fab fa-instagram"></i></a>
+              <a href="https://www.linkedin.com/company/telecall/" target="_blank"><i
+                  class="fab fa-linkedin-in"></i></a>
+            </div>
+
+          </div>
+
+        </div>
+    </footer>
+
+
+    <script src="dark.js"></script>
+    <script src="login.js"></script>
+    <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script>
+    <script src="script.js"></script>
+  </body>
+
+</html>

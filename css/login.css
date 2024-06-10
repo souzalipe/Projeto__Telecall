@@ -1,0 +1,282 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+body {
+  background-color: #F8F8FF;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.container-login {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 100px;
+}
+
+.card {
+  background-color: #DCDCDC;
+  padding: 30px;
+  border-radius: 7%;
+  box-shadow: 3px 3px 1px 0px #00000070;
+  margin-top: 50px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #800000;
+}
+
+.label-float input {
+  width: 100%;
+  padding: 5px 5px;
+  display: inline-block;
+  border: 0;
+  border-bottom: 2px solid #800000;
+  background-color: transparent;
+  outline: none;
+  min-width: 180px;
+  font-size: 16px;
+  transition: all 0.3s ease-out;
+  border-radius: 0;
+}
+
+.label-float {
+  position: relative;
+  padding-top: 13px;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.label-float input:focus {
+  border-bottom: 2px solid #800000;
+}
+
+.label-float input:focus+label {
+  font-size: 13px;
+  margin-top: 0;
+  color: #800000;
+}
+
+button {
+  background-color: transparent;
+  border-color: #800000;
+  color: #800000;
+  padding: 7px;
+  font-weight: bold;
+  font-size: 12pt;
+  margin-top: 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  outline: none;
+  /* Corrigido aqui */
+  transition: all 0.6s ease-out;
+}
+
+button:hover {
+  background-color: #800000;
+  color: #fff;
+}
+
+.justify-center {
+  display: flex;
+  justify-content: center;
+}
+
+hr {
+  margin-top: 10%;
+  margin-bottom: 10%;
+  width: 80%;
+}
+
+p {
+  color: #800000;
+  font-size: 14pt;
+  text-align: center;
+}
+
+a {
+  color: #800000;
+  font-weitght: bold;
+  text-decoration: none;
+  transition: all 0.6s ease-out;
+}
+
+a:houver {
+  color: #800000;
+}
+
+.fa-eye {
+  position: absolute;
+  top: 13px;
+  right: 17px;
+  cursor: pointer;
+  color: #800000;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Poppins:wght@400;600;700&display=swap');
+
+body {
+  line-height: 1.5;
+  font-family: 'Poppins', sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1170px;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+ul {
+  list-style: none;
+}
+
+.rodape {
+  background-image: linear-gradient(to left, rgb(0, 68, 255), rgb(0, 38, 143));
+  /* background-color: #24262b; */
+  padding: 70px 0;
+  margin-top: 10%;
+  background-size: 500% 100%;
+  animation: degrade-animado 3s infinite alternate;
+}
+
+.rodape-col {
+  width: 25%;
+  padding: 0 15px;
+}
+
+.rodape-col h4 {
+  font-size: 18px;
+  color: #FFFFFF;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
+}
+
+.rodape-col h4::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: #e91e63;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+
+.rodape-col ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.rodape-col ul li a {
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #FFFFFF;
+  text-decoration: none;
+  font-weight: 300;
+  color: #bbbbbb;
+  display: block;
+  transition: all 0.3s ease;
+}
+
+.rodape-col ul li a:hover {
+  color: #FFFFFF;
+  padding-left: 8px;
+}
+
+.rodape-col .links-redes a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgb(255, 255, 255, 0.2);
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #FFFFFF;
+  transition: all 0.5s ease;
+}
+
+.rodape-col .links-redes a:hover {
+  color: #24262b;
+  background-color: #FFFFFF;
+}
+
+/* reponsiva */
+@media(max-width: 767px) {
+  .rodape-col {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+}
+
+@media(max-width: 574px) {
+  .rodape-col {
+    width: 100%;
+  }
+}
+
+@keyframes degrade-animado {
+
+  0% {
+    background-position-x: 0%;
+  }
+
+  100% {
+    background-position-x: 100%;
+  }
+
+
+}
+
+/* reponsiva */
+@media(max-width: 767px) {
+  .rodape-col {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+}
+
+@media(max-width: 574px) {
+  .rodape-col {
+    width: 100%;
+  }
+}
+
+@keyframes degrade-animado {
+
+  0% {
+    background-position-x: 0%;
+  }
+
+  100% {
+    background-position-x: 100%;
+  }
+
+
+}
+
+#msgError {
+  text-align: center;
+  color: #ff0000;
+  background-color: #ffbbbb;
+  padding: 10px;
+  border-radius: 4px;
+  display: none;
+}

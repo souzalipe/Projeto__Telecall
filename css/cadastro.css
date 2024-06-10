@@ -1,0 +1,205 @@
+/* Reset de estilos padrão do navegador */
+body,
+h1,
+h2,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+#login-container {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.form_login {
+  text-align: left;
+}
+
+.label_login {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.input_login {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+input[type="radio"] {
+  margin-right: 5px;
+}
+
+.btn_cadastrar {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn_cadastrar:hover {
+  background-color: #0056b3;
+}
+
+.password-container {
+  position: relative;
+}
+
+.password-container .fa-regular {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+#mensagem {
+  margin-top: 10px;
+  color: red;
+  font-weight: bold;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.titulo-principal {
+  text-align: center;
+  margin-top: 10%;
+  color: #003b71;
+  position: static;
+}
+
+.titulo-secundario {
+  text-align: justify;
+  margin-top: 20%;
+  color: #003b71;
+  position: relative;
+}
+
+.titulo-terciario {
+  text-align: center;
+  margin-top: 2%;
+  color: #003b71;
+  position: relative;
+}
+
+@keyframes degrade-animado {
+
+  0% {
+    background-position-x: 0%;
+  }
+
+  100% {
+    background-position-x: 100%;
+  }
+
+
+}
+
+.texto-produtos-1 {
+  text-align: center;
+  margin-top: 15%;
+  color: #1230da;
+}
+
+.texto-produtos-2 {
+  text-align: center;
+  margin-top: 15%;
+  color: #1230da;
+}
+
+.dp-menu ul {
+  list-style-type: none;
+}
+
+
+.logo {
+  width: 150px;
+  position: absolute;
+  margin-top: 20px;
+  margin-left: 0.6%;
+}
+
+.telecall-mundo {
+  padding: 0%;
+}
+
+.dp-menu ul {
+  background-image: linear-gradient(to left, rgb(27, 40, 223), rgb(167, 0, 0), rgb(121, 0, 0));
+  display: block;
+  background-size: 500% 100%;
+  animation: degrade-animado 3s infinite alternate;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: right;
+}
+
+.dp-menu ul li {
+  display: inline;
+  position: relative;
+
+}
+
+.dp-menu ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  display: inline-block;
+  padding: 1.5% 1.5% 1.5% 2%;
+  transition: background .3s;
+  text-align: center;
+
+}
+
+.dp-menu ul li a:hover {
+  background-image: linear-gradient(to left, rgb(27, 40, 223), rgb(167, 0, 0), rgb(121, 0, 0));
+  background-size: 500% 100%;
+  animation: degrade-animado 3s infinite alternate;
+
+}
+
+
+.dp-menu ul ul {
+  display: none;
+  left: 0;
+  position: absolute;
+
+}
+
+.dp-menu ul li:hover ul {
+  display: block;
+  background-image: linear-gradient(to left, rgb(27, 40, 223), rgb(167, 0, 0), rgb(121, 0, 0));
+  background-size: 500% 100%;
+  animation: degrade-animado 3s infinite alternate;
+}
+
+.dp-menu ul ul {
+  width: 150px
+}
+
+.dp-menu ul ul li a {
+  display: block;
+
+}
+
+.pp {
+  text-align: center;
+
+}

@@ -1,0 +1,172 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*.box-paragrafo-telecall {
+  width: 1000px;
+  position: absolute;
+  margin-left: 25%;
+  margin-top: 0;
+  display: block;
+}*/
+
+.titulo-telecall {
+  margin-top: 5%;
+  text-align: center;
+  font-size: 40px;
+  color: #0274be;
+  position: relative;
+  font-weight: 600;
+}
+
+.paragrafo-telecall {
+  font-family: "Poppins", Sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.7em;
+  text-align: center;
+}
+
+.titulo-principal {
+  text-align: center;
+  margin-top: 10%;
+  color: #003b71;
+  position: static;
+}
+
+h1.titulo-secundario {
+  justify-content: center;
+  position: flex;
+  text-align: center;
+}
+
+.titulo-secundario {
+  text-align: justify;
+  margin-top: 20%;
+  color: #003b71;
+  position: relative;
+}
+
+.titulo-terciario {
+  text-align: center;
+  margin-top: 2%;
+  color: #003b71;
+  position: relative;
+}
+
+@keyframes degrade-animado {
+
+  0% {
+    background-position-x: 0%;
+  }
+
+  100% {
+    background-position-x: 100%;
+  }
+
+
+}
+
+.texto-produtos-1 {
+  text-align: center;
+  margin-top: 15%;
+  color: #1230da;
+}
+
+.texto-produtos-2 {
+  text-align: center;
+  margin-top: 15%;
+  color: #1230da;
+}
+
+.dp-menu ul {
+  list-style-type: none;
+}
+
+
+.logo {
+  width: 150px;
+  position: absolute;
+  margin-top: 25px;
+  margin-left: 0.6%;
+}
+
+
+
+.telacall-mundo-img {
+  width: 70%;
+  margin-top: 20%;
+  margin-left: 15%;
+}
+
+.dp-menu ul {
+  background-image: linear-gradient(to left, rgb(27, 40, 223), rgb(167, 0, 0), rgb(121, 0, 0));
+  display: block;
+  background-size: 500% 100%;
+  animation: degrade-animado 3s infinite alternate;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: right;
+}
+
+.dp-menu ul li {
+  display: inline;
+  position: relative;
+
+}
+
+.dp-menu ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  display: inline-block;
+  padding: 1.5% 1.5% 1.5% 2%;
+  transition: background .3s;
+  text-align: center;
+
+}
+
+.dp-menu ul li a:hover {
+  background-image: linear-gradient(to left, rgb(27, 40, 223), rgb(167, 0, 0), rgb(121, 0, 0));
+  background-size: 500% 100%;
+  animation: degrade-animado 3s infinite alternate;
+
+
+}
+
+
+.dp-menu ul ul {
+  display: none;
+  left: 0;
+  position: absolute;
+
+}
+
+.dp-menu ul li:hover ul {
+  display: block;
+  background-image: linear-gradient(to left, rgb(27, 40, 223), rgb(167, 0, 0), rgb(121, 0, 0));
+  background-size: 500% 100%;
+  animation: degrade-animado 3s infinite alternate;
+}
+
+.dp-menu ul ul {
+  width: 150px
+}
+
+.dp-menu ul ul li a {
+  display: block;
+
+}
+
+.pp {
+  text-align: center;
+
+}
+
+.cabecalho {
+  width: 100%;
+}
+
+.p .paragrafo-telecall {
+  text-align: center;
+
+}

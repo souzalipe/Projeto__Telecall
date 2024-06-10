@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro Telecall</title>
+
+  <!-- NOSSO CSS -->
+  <link href="css/cadastro.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="/css/dark.css">
+
+  <!-- NOSSO CSS -->
+  <!--  icone do lado do title -->
+  <link rel="shortcut icon" type="image/png" href="./imagens/logo telacall site.png">
+  <!--  icone do lado do title -->
+
+  <!-- boot css-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <!-- boot css-->
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+</head>
+
+
+<header class="cabecalho">
+
+  <nav class="dp-menu">
+
+    <a href="index.html"><img class="logo" src="/imagens/telecall.png" alt=""></a>
+    <ul>
+
+
+      <li><a href="#"><img id="home" src="imagens/contatos.png" title="contatos"></a>
+        <ul>
+          <li><a href="https://projet-x--felipenascime42.repl.co/empresas.html" target="_blank">Empressas</a></li>
+          <li><a href="https://api.whatsapp.com/send?phone=552130301010&text=%23Comercial" target="_blank">Whatsapp</a>
+          </li>
+        </ul>
+      </li>
+      <li><a href="https://projet-x--felipenascime42.repl.co/login.html" target="_blank"><img id="home"
+            src="imagens/login.png" title="login"></a></li>
+      <li><a href="https://projet-x.felipenascime42.repl.co/index.html"><img id="home" src="cpass imagens/casa.png"
+            title="inicio"></a>
+      </li>
+      </li>
+    </ul>
+    <!--- Dark Mode --->
+    <div>
+      <input type="checkbox" class="checkbox" id="chk">
+      <label class="label" for="chk">
+        <i class="fas fa-moon"></i>
+        <i class="fas fa-sun"></i>
+        <div class="ball"></div>
+      </label>
+    </div>
+    <!--- Dark Mode --->
+
+  </nav>
+</header>
+
+
+<body>
+  <div id="login-container">
+    <form class="form_login" action="#" method="post" onsubmit="return cadastrar()">
+
+      <label class="label_login" for="nome" id="labelNome"> Nome:</label>
+      <input class="input_login" type="text" id="nome" name="nome" maxlength="60" autofocus>
+
+      <label for="nasc" class="label_login"> Data de nascimento: </label>
+      <input class="input_login" type="date" id="nasc" name="nasc">
+
+      <label for="sexo" class="label_login"> Genêro:</label>
+      <input type="radio" id="m" name="genero" value="masculino">
+      <label for="m">Masculino</label>
+      <input type=radio id="f" name="genero" value="feminino">
+      <label for="f"> Feminino</label>
+      <input type="radio" id="outro" name="genero" value="outro">
+      <label for="outro">Outro</label>
+
+      <label class="label_login" for="name" id="labelMae">Nome Materno:</label>
+      <input type="text" id="Nomematerno" name="mae" class="input_login" placeholder="Digite o nome da sua mãe"
+        maxlength="60">
+
+      <label for="cpf" id='labelCpf' class="label_login">CPF:</label>
+      <input class="input_login" type="text" id="cpf" name="cpf" maxlength="11" placeholder="Digite seu cpf" />
+
+      <label for="tel" class="label_login" id="labelTel"> Telefone Fixo:</label>
+      <input class="input_login" type="tel" maxlength="12" id='tel' name="tel" placeholder="Digite seu número com o DD">
+
+      <label for="cel" class="label_login" id='labelCel'> Telefone Celular:</label>
+      <input class="input_login" type="tel" id="numeroCelular" name="numeroCelular" placeholder="(xx) xxxxx-xxxx"
+        maxlength="14">
+
+      <label class="label_login" for="ende" class="form" id="labelCep"> Cep:</label>
+      <input class="input_login" type='text' maxlength="9" id='cep' name='cep' placeholder="Digite seu cep">
+
+      <label class="label_login" for="ende" class="form" id="labelCidade"> Cidade:</label>
+      <input class="input_login" type='text' id='cid' name='cidade' placeholder="Digite sua cidade">
+
+      <label id="labelRua" for="ende" class="label_login"> Rua:</label>
+      <input class="input_login" type="text" id='rua' name="rua" placeholder="Digite sua rua">
+
+      <label id="labelBairro" for "ende" class="label_login"> Bairro:</label>
+      <input class="input_login" type="text" id='bairro' name="bairro" placeholder="Digite seu bairro">
+
+      <label id="labelN" for="ende" class="label_login"> Número:</label>
+      <input class="input_login" type='number' id='n' name='numero' placeholder="Digite o número da casa">
+
+      <label for="ende" class="label_login"> Complemento:</label>
+      <input class="input_login" type="text" id='ende' name="complemento" placeholder="Digite o complemento">
+
+      <label class="label_login" id="labelLogin" for="login" class="form">Login:</label>
+      <input class="input_login" type='text' id='login' name='login' placeholder="Digite um login" maxlength="6">
+
+      <label class="label_login" id="labelEmail" for="email" class="form"> E-mail:</label>
+      <input class="input_login" type="email" id="email" name="email" placeholder="Digite um e-mail">
+
+      <label class="label_login" id="labelSenha" for="senha" class="form"> Senha:</label>
+      <div class="password-container">
+        <input class="input_login" type="password" id="senha" name="senha" placeholder="Digite sua senha" maxlength="8"
+          autocomplete="new-password">
+        <i id="verSenha" class="fa-regular fa-eye"></i>
+      </div>
+
+      <label class="label_login" id="labelConfirmacao" for="senha2" class="form">Confirmação de Senha:</label>
+      <div class="password-container">
+        <input class="input_login" type="password" id="senha2" name="senha2" placeholder="Digite sua senha"
+          maxlength="8" autocomplete="new-password">
+        <i id="verConfirme" class="fa-regular fa-eye"></i>
+      </div>
+
+      <div id="mensagem"></div>
+
+      <button class="btn_cadastrar" type="submit">Cadastrar</button>
+    </form>
+
+    <script src="https://fontawesome.com/998c60ef77.js" crosssoringin="anonymous"></script>
+    <script src="script.js"></script>
+    <script src="dark.js"></script>
+  </div>
+</body>
+
+</html>

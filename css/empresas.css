@@ -1,0 +1,375 @@
+/* Area do Cabeçalho*/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.titulo-principal {
+  text-align: center;
+  margin-top: 10%;
+  color: #003b71;
+  position: static;
+}
+
+.titulo-secundario {
+  text-align: center;
+  margin-top: 36%;
+  color: #003b71;
+  position: relative;
+}
+
+@keyframes degrade-animado {
+
+  0% {
+    background-position-x: 0%;
+  }
+
+  100% {
+    background-position-x: 100%;
+  }
+
+
+}
+
+.texto-produtos-1 {
+  text-align: center;
+  margin-top: 15%;
+  color: #1230da;
+}
+
+.texto-produtos-2 {
+  text-align: center;
+  margin-top: 15%;
+  color: #1230da;
+}
+
+.dp-menu ul {
+  list-style-type: none;
+}
+
+.logo {
+  width: 150px;
+  position: absolute;
+  margin-top: 20px;
+  margin-left: 0.6%;
+}
+
+.dp-menu ul {
+  background-image: linear-gradient(to left, rgb(27, 40, 223), rgb(167, 0, 0), rgb(121, 0, 0));
+  display: block;
+  background-size: 500% 100%;
+  animation: degrade-animado 3s infinite alternate;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: right;
+}
+
+.dp-menu ul li {
+  display: inline;
+  position: relative;
+
+}
+
+.dp-menu ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  display: inline-block;
+  padding: 1.5% 1.5% 1.5% 2%;
+  transition: background .3s;
+  text-align: center;
+
+}
+
+.dp-menu ul li a:hover {
+  background-image: linear-gradient(to left, rgb(27, 40, 223), rgb(167, 0, 0), rgb(121, 0, 0));
+  background-size: 500% 100%;
+  animation: degrade-animado 3s infinite alternate;
+
+}
+
+
+.dp-menu ul ul {
+  display: none;
+  left: 0;
+  position: absolute;
+
+}
+
+.dp-menu ul li:hover ul {
+  display: block;
+  background-image: linear-gradient(to left, rgb(27, 40, 223), rgb(167, 0, 0), rgb(121, 0, 0));
+  background-size: 500% 100%;
+  animation: degrade-animado 3s infinite alternate;
+}
+
+.dp-menu ul ul {
+  width: 150px
+}
+
+.dp-menu ul ul li a {
+  display: block;
+
+}
+
+/* Area dos Escritórios */
+
+body {
+  background-color: #f0f0f0;
+}
+
+/* Estilos gerais para o formulário */
+.borda {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: Arial, sans-serif;
+}
+
+/* Estilos para o grupo de campos */
+.grupo {
+  margin-bottom: 20px;
+}
+
+/* Estilos para os campos de entrada e rótulos */
+.campo label {
+  display: block;
+  font-weight: bold;
+}
+
+.campo input[type="text"],
+.campo input[type="password"] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+/* Estilos para os botões */
+.botoes {
+  text-align: center;
+}
+
+.botao {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.botao:hover {
+  background-color: #45a049;
+}
+
+.BOTAO {
+  background-color: #ff0000;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.BOTAO:hover {
+  background-color: #e60000;
+}
+
+
+/* Area do Cabeçalho */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.titulo-principal {
+  text-align: center;
+  margin-top: 10%;
+  color: #003b71;
+  position: static;
+}
+
+.titulo-secundario {
+  text-align: center;
+  margin-top: 36%;
+  color: #003b71;
+  position: relative;
+}
+
+@keyframes degrade-animado {
+
+  0% {
+    background-position-x: 0%;
+  }
+
+  100% {
+    background-position-x: 100%;
+  }
+
+}
+
+.texto-produtos-1 {
+  text-align: center;
+  margin-top: 15%;
+  color: #1230da;
+}
+
+.texto-produtos-2 {
+  text-align: center;
+  margin-top: 15%;
+  color: #1230da;
+}
+
+.dp-menu ul {
+  list-style-type: none;
+}
+
+.logo {
+  width: 150px;
+  position: absolute;
+  margin-top: 20px;
+  margin-left: 0.6%;
+}
+
+.dp-menu ul {
+  background-image: linear-gradient(to left, rgb(27, 40, 223), rgb(167, 0, 0), rgb(121, 0, 0));
+  display: block;
+  background-size: 500% 100%;
+  animation: degrade-animado 3s infinite alternate;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: right;
+}
+
+.dp-menu ul li {
+  display: inline;
+  position: relative;
+
+}
+
+.dp-menu ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  display: inline-block;
+  padding: 1.5% 1.5% 1.5% 2%;
+  transition: background .3s;
+  text-align: center;
+
+}
+
+.dp-menu ul li a:hover {
+  background-image: linear-gradient(to left, rgb(27, 40, 223), rgb(167, 0, 0), rgb(121, 0, 0));
+  background-size: 500% 100%;
+  animation: degrade-animado 3s infinite alternate;
+
+}
+
+.dp-menu ul ul {
+  display: none;
+  left: 0;
+  position: absolute;
+
+}
+
+.dp-menu ul li:hover ul {
+  display: block;
+  background-image: linear-gradient(to left, rgb(27, 40, 223), rgb(167, 0, 0), rgb(121, 0, 0));
+  background-size: 500% 100%;
+  animation: degrade-animado 3s infinite alternate;
+}
+
+.dp-menu ul ul {
+  width: 150px
+}
+
+.dp-menu ul ul li a {
+  display: block;
+
+}
+
+/* Área dos Escritórios */
+
+body {
+  background-color: #f0f0f0;
+}
+
+/* Estilos gerais para o formulário */
+.borda {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: Arial, sans-serif;
+}
+
+/* Estilos para o grupo de campos */
+.grupo {
+  margin-bottom: 20px;
+}
+
+/* Estilos para os campos de entrada e rótulos */
+.campo label {
+  display: block;
+  font-weight: bold;
+}
+
+.campo input[type="text"],
+.campo input[type="password"] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+/* Estilos para os botões */
+.botoes {
+  text-align: center;
+}
+
+.botao,
+.BOTAO {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.botao:hover,
+.BOTAO:hover {
+  background-color: #45a049;
+}
+
+.BOTAO {
+  background-color: #ff0000;
+}
+
+.BOTAO:hover {
+  background-color: #e60000;
+}
+
+/* Estilos específicos para telas pequenas (max-width: 768px) */
+@media screen and (max-width: 768px) {
+
+  .titulo-principal,
+  .titulo-secundario {
+    margin-top: 5%;
+  }
+
+  .texto-produtos-1,
+  .texto-produtos-2 {
+    margin-top: 5%;
+  }
+}
+
+/* Outros estilos de mídia específicos podem ser adicionados conforme necessário */
